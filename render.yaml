@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: nutrilens-ai-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_ALGORITHM
+        value: HS256
+      - key: JWT_EXPIRE_MINUTES
+        value: "1440"
+      - key: FRONTEND_ORIGIN
+        sync: false
+      - key: CHROMA_PERSIST_DIR
+        value: "../vector_db"

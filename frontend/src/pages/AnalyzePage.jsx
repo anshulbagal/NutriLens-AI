@@ -7,7 +7,10 @@ import { analyzeProduct } from '../services/api'
 
 function AnalyzePage() {
   const [file, setFile] = useState(null)
-  const [result, setResult] = useState(null)
+  const [result, setResult] = useState(() => {
+    const saved = sessionStorage.getItem('nutrilens_last_analysis')
+    return saved ? JSON.parse(saved) : null
+  })
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
@@ -16,9 +19,11 @@ function AnalyzePage() {
     setLoading(true)
     setError(null)
     setResult(null)
+    sessionStorage.removeItem('nutrilens_last_analysis')
     try {
       const res = await analyzeProduct(file)
       setResult(res.data)
+      sessionStorage.setItem('nutrilens_last_analysis', JSON.stringify(res.data))
     } catch (err) {
       setError(err.response?.data?.detail || 'Something went wrong analyzing this image.')
     } finally {
@@ -157,7 +162,7 @@ function AnalyzePage() {
               <section className="animate-slide-up">
                 <HealthScoreBadge
                   score={result.explanation.health_score}
-                  reasoning={result.explanation.health_score_reasoning}
+                  reasoning={result.explanation.health_reasoning_points}
                 />
               </section>
 

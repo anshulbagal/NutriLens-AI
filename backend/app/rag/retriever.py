@@ -5,7 +5,7 @@ RAG pipeline - chunking, embedding, and retrieval via ChromaDB + LangChain.
 import os
 import glob
 
-from langchain_community.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader, TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
@@ -30,19 +30,25 @@ def get_embeddings():
 
 def build_knowledge_base():
     """
-    Load every PDF in knowledge_base/, chunk it, embed it, and persist
+    Load every PDF and TXT file in knowledge_base/, chunk it, embed it, and persist
     the embeddings to vector_db/. Run this once after adding new reference
     documents (ingredient glossaries, FDA/WHO guidance, allergen info, etc).
     """
     pdf_paths = glob.glob(os.path.join(KNOWLEDGE_BASE_DIR, "*.pdf"))
-    if not pdf_paths:
+    txt_paths = glob.glob(os.path.join(KNOWLEDGE_BASE_DIR, "*.txt"))
+    all_paths = pdf_paths + txt_paths
+
+    if not all_paths:
         raise FileNotFoundError(
-            f"No PDFs found in {KNOWLEDGE_BASE_DIR}. Add reference documents first."
+            f"No PDF or TXT files found in {KNOWLEDGE_BASE_DIR}. Add reference documents first."
         )
 
     all_docs = []
     for path in pdf_paths:
         loader = PyPDFLoader(path)
+        all_docs.extend(loader.load())
+    for path in txt_paths:
+        loader = TextLoader(path, encoding="utf-8")
         all_docs.extend(loader.load())
 
     splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100)
@@ -54,7 +60,7 @@ def build_knowledge_base():
         persist_directory=VECTOR_DB_DIR,
     )
     vectorstore.persist()
-    return {"documents_loaded": len(pdf_paths), "chunks_created": len(chunks)}
+    return {"documents_loaded": len(all_paths), "chunks_created": len(chunks)}
 
 
 def get_vectorstore():

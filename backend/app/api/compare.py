@@ -2,6 +2,8 @@
 Routes for: compare
 """
 
+import asyncio
+
 from fastapi import APIRouter, UploadFile, File, HTTPException, Depends
 
 from app.services.image_service import save_upload
@@ -28,8 +30,10 @@ async def compare(
     path_a = await save_upload(file_a)
     path_b = await save_upload(file_b)
 
+    loop = asyncio.get_event_loop()
     try:
-        result = compare_products(path_a, path_b)
+        # Run blocking OCR + LLM comparison in a thread pool
+        result = await loop.run_in_executor(None, compare_products, path_a, path_b)
     except RuntimeError as e:
         raise HTTPException(status_code=502, detail=str(e))
 

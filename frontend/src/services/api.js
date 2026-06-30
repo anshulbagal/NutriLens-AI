@@ -6,16 +6,12 @@ const api = axios.create({
   baseURL: API_URL,
 })
 
-// Module-level token store, set by AuthContext on login/logout.
-// Interceptors can't use React hooks directly, so this bridges the two.
-let authToken = null
-export const setAuthToken = (token) => {
-  authToken = token
-}
-
+// Interceptors can't use React hooks directly, so we read from localStorage to ensure
+// the latest token is always used, preventing HMR or race condition auth drops.
 api.interceptors.request.use((config) => {
-  if (authToken) {
-    config.headers.Authorization = `Bearer ${authToken}`
+  const token = localStorage.getItem('nutrilens_token')
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`
   }
   return config
 })

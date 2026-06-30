@@ -2,6 +2,9 @@
 Routes for: analyze
 """
 
+import asyncio
+from functools import partial
+
 from fastapi import APIRouter, UploadFile, File, HTTPException, Depends
 
 from app.services.image_service import save_upload
@@ -25,11 +28,17 @@ async def analyze_product(
 
     If the request includes a valid Authorization header, the result is also
     saved to that user's scan history.
+
+    NOTE: OCR (EasyOCR) and LLM calls are CPU/IO-bound and run in a thread
+    pool executor so they don't block the async event loop.
     """
     filepath = await save_upload(file)
 
+    loop = asyncio.get_event_loop()
+
     try:
-        extraction = analyze_image(filepath)
+        # Run blocking OCR + parsing in a thread pool
+        extraction = await loop.run_in_executor(None, analyze_image, filepath)
     except NotImplementedError as e:
         raise HTTPException(status_code=501, detail=str(e))
 
@@ -39,9 +48,10 @@ async def analyze_product(
         return extraction
 
     try:
-        result = explain_product(extraction)
+        # Run blocking LLM call in a thread pool
+        result = await loop.run_in_executor(None, explain_product, extraction)
     except RuntimeError as e:
-        # e.g. GEMINI_API_KEY missing - return Phase 1 data with a warning
+        # e.g. API key missing - return Phase 1 data with a warning
         # rather than a hard failure.
         extraction["explanation_error"] = str(e)
         result = extraction

@@ -59,8 +59,19 @@ function HealthScoreBadge({ score, reasoning }) {
       {/* Text */}
       <div className="flex-1 min-w-0">
         <h3 className="text-lg font-semibold text-gray-100">Health Score</h3>
-        {reasoning && (
-          <p className="text-sm text-gray-400 mt-1 leading-relaxed">{reasoning}</p>
+        {reasoning && Array.isArray(reasoning) && reasoning.length > 0 && (
+          <div className="mt-4 space-y-2.5">
+            {reasoning.map((point, i) => (
+              <div key={i} className="flex items-start gap-2.5 text-sm">
+                <span className={`mt-0.5 flex-shrink-0 font-bold ${point.type === 'positive' ? 'text-emerald-400' : 'text-amber-400'}`}>
+                  {point.type === 'positive' ? '✔' : '⚠'}
+                </span>
+                <span className={point.type === 'positive' ? 'text-gray-300' : 'text-gray-300'}>
+                  {point.reason} <span className={point.type === 'positive' ? 'text-emerald-400/80 font-medium' : 'text-amber-400/80 font-medium'}>({point.points > 0 ? '+' : ''}{point.points})</span>
+                </span>
+              </div>
+            ))}
+          </div>
         )}
       </div>
     </div>

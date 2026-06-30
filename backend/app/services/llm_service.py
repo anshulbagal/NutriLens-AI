@@ -7,6 +7,7 @@ import json
 from groq import Groq
 
 from app.prompts.templates import (
+    OCR_EXTRACTION_PROMPT_TEMPLATE,
     EXPLANATION_PROMPT_TEMPLATE,
     COMPARISON_PROMPT_TEMPLATE,
     CHAT_PROMPT_TEMPLATE,
@@ -62,14 +63,43 @@ def _extract_json(text: str) -> dict:
     return json.loads(cleaned.strip())
 
 
+def extract_structured_data(raw_text: str) -> dict:
+
+    prompt = OCR_EXTRACTION_PROMPT_TEMPLATE.format(
+        raw_text=raw_text
+    )
+
+    response = ask_llm(prompt)
+
+    try:
+        return _extract_json(response)
+    except Exception:
+        # Fallback to empty structure if parsing completely fails
+        return {
+            "ingredients": [],
+            "nutrition": {},
+            "allergen_mentions": [],
+            "raw_response": response
+        }
+
+
 def generate_explanation(
     ingredients: list,
     nutrition: dict,
     allergen_mentions: list,
     retrieved_context: list,
+    health_score_data: dict,
 ) -> dict:
 
+    reasoning_text = "\n".join(
+        f"- {p['reason']} ({'+' if p['points'] > 0 else ''}{p['points']})"
+        for p in health_score_data.get("reasoning_points", [])
+    ) or "No specific rules applied."
+
     prompt = EXPLANATION_PROMPT_TEMPLATE.format(
+        health_score=health_score_data.get("score"),
+        health_rating=health_score_data.get("rating"),
+        health_reasoning=reasoning_text,
         ingredients=json.dumps(ingredients, indent=2),
         nutrition=json.dumps(nutrition, indent=2),
         allergen_mentions=json.dumps(allergen_mentions, indent=2),

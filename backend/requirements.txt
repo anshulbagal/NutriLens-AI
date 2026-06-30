@@ -4,8 +4,7 @@ uvicorn[standard]
 python-multipart
 
 # --- OCR ---
-paddleocr==2.8.1
-paddlepaddle==2.6.2
+easyocr
 
 # --- LLM ---
 groq

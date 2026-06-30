@@ -1,5 +1,4 @@
 import { createContext, useContext, useState, useEffect } from 'react'
-import { setAuthToken } from '../services/api'
 
 const AuthContext = createContext(null)
 
@@ -16,7 +15,6 @@ export function AuthProvider({ children }) {
         const parsed = JSON.parse(storedUser)
         setToken(storedToken)
         setUser(parsed)
-        setAuthToken(storedToken)
       } catch {
         localStorage.removeItem('nutrilens_token')
         localStorage.removeItem('nutrilens_user')
@@ -27,7 +25,6 @@ export function AuthProvider({ children }) {
   const login = (accessToken, userData) => {
     setToken(accessToken)
     setUser(userData)
-    setAuthToken(accessToken)
     localStorage.setItem('nutrilens_token', accessToken)
     localStorage.setItem('nutrilens_user', JSON.stringify(userData))
   }
@@ -35,7 +32,6 @@ export function AuthProvider({ children }) {
   const logout = () => {
     setToken(null)
     setUser(null)
-    setAuthToken(null)
     localStorage.removeItem('nutrilens_token')
     localStorage.removeItem('nutrilens_user')
   }

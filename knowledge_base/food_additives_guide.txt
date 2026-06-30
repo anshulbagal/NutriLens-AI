@@ -1,0 +1,161 @@
+FOOD ADDITIVES AND E-NUMBERS REFERENCE GUIDE
+=============================================
+
+WHAT ARE FOOD ADDITIVES?
+Food additives are substances added to food during processing to preserve flavor,
+enhance taste, improve appearance, extend shelf life, or improve food safety.
+They are regulated by FDA (USA), EFSA (Europe), and FSSAI (India).
+
+E-NUMBERS are codes assigned by the European Union to approved food additives.
+An E-number guarantees the additive has been assessed and approved for use in the EU.
+
+---
+COLORS (E100–E199)
+---
+
+E100 Curcumin (Turmeric) - Natural yellow color from turmeric root. Antioxidant properties. Safe.
+E101 Riboflavin (Vitamin B2) - Natural yellow/orange color. Also a nutrient. Safe.
+E102 Tartrazine - Synthetic yellow dye. May cause hyperactivity in children sensitive to it. Banned in some countries.
+E104 Quinoline Yellow - Synthetic yellow. Restricted in USA, Japan, Australia.
+E110 Sunset Yellow FCF - Synthetic orange-yellow. May cause hyperactivity. Requires warning label in EU.
+E120 Cochineal / Carmine - Red color derived from insects. Halal/vegan concern. Can cause allergic reactions.
+E122 Carmoisine - Synthetic red. Requires warning in EU. Banned in USA, Japan.
+E123 Amaranth - Synthetic dark red. Banned in USA since 1976.
+E124 Ponceau 4R - Synthetic red. Banned in USA. Requires EU warning.
+E127 Erythrosine - Synthetic cherry-red. FDA-approved. Contains iodine.
+E129 Allura Red AC (Red 40) - Synthetic red. Most widely used red dye in USA. Hyperactivity concerns in children.
+E131 Patent Blue V - Synthetic blue. Banned in USA, Australia. Rarely used.
+E132 Indigo Carmine (Blue 2) - Synthetic blue. FDA-approved. Generally safe.
+E133 Brilliant Blue FCF (Blue 1) - Synthetic blue. FDA-approved.
+E140 Chlorophylls - Natural green color from plants. Safe.
+E150a Caramel Color (plain) - Heated sugar. Used in cola, beer, soy sauce. Safe.
+E150d Caramel Color (sulfite-ammonia) - Contains 4-methylimidazole (4-MEI), a potential carcinogen. Common in cola drinks.
+E160a Beta-carotene - Natural orange, precursor to Vitamin A. Safe and beneficial.
+E160b Annatto - Natural yellow-orange from seeds. Can cause allergic reactions.
+E171 Titanium Dioxide - White color. European Food Safety Authority (EFSA) concluded it's no longer safe (2021). Banned in EU food.
+E172 Iron Oxides and Hydroxides - Natural mineral colors (yellow, red, black). Safe.
+
+---
+PRESERVATIVES (E200–E299)
+---
+
+E200 Sorbic Acid - Prevents mold in cheese, baked goods, beverages. Generally safe.
+E202 Potassium Sorbate - Salt of sorbic acid. Widely used. Can cause mild skin/eye irritation at high doses.
+E210 Benzoic Acid - Prevents yeast and bacteria growth. Occurs naturally in cranberries.
+E211 Sodium Benzoate - Combines with Vitamin C to form benzene (a carcinogen). Controversial.
+E220 Sulfur Dioxide - Preservative in wine, dried fruits. Causes reactions in asthmatics (avoid if asthmatic).
+E221-E228 Sulfites - Same concern as SO2; must be declared on labels if >10ppm.
+E249 Potassium Nitrite - Cured meats. Forms carcinogenic nitrosamines at high temperatures.
+E250 Sodium Nitrite - Bacon, ham, hot dogs, deli meats. Carcinogenic concern; necessary to prevent botulism.
+E251 Sodium Nitrate - Similar to sodium nitrite. Longer-acting preservative in cured meats.
+E260 Acetic Acid (Vinegar) - Safe natural preservative.
+E270 Lactic Acid - Safe. Natural fermentation product.
+E280 Propionic Acid - Prevents mold in bread. Generally safe.
+E300 Ascorbic Acid (Vitamin C) - Antioxidant preservative. Safe and nutritious.
+E306-E309 Tocopherols (Vitamin E) - Natural antioxidants. Safe and beneficial.
+E319 TBHQ (tert-Butylhydroquinone) - Synthetic antioxidant in fast food, chips. High doses toxic in animals; FDA limits to 0.02% of fat content.
+E320 BHA (Butylated Hydroxyanisole) - Synthetic antioxidant. Possible carcinogen (California Prop 65 listed). FDA considers GRAS.
+E321 BHT (Butylated Hydroxytoluene) - Synthetic antioxidant. Similar concerns to BHA. Banned in some countries.
+
+---
+ANTIOXIDANTS AND ACIDITY REGULATORS (E300–E399)
+---
+
+E330 Citric Acid - Natural, found in citrus fruit. Safe and widely used. Adds tartness.
+E331 Sodium Citrates - Acidity regulator. Safe.
+E332 Potassium Citrates - Safe emulsifier and acidity regulator.
+E333 Calcium Citrates - Safe. Used in cheese making.
+E334 Tartaric Acid - Natural in grapes. Safe.
+E338 Phosphoric Acid - Found in cola drinks. Contributes to dental erosion and may affect calcium absorption.
+E339 Sodium Phosphates - Emulsifier, preservative. Excessive phosphate intake linked to kidney and cardiovascular issues.
+
+---
+THICKENERS, STABILIZERS, AND EMULSIFIERS (E400–E499)
+---
+
+E401-E405 Alginates - Derived from seaweed. Safe thickeners.
+E407 Carrageenan - Seaweed extract used in dairy alternatives. Some controversy over gut inflammation; generally considered safe by FDA.
+E410 Locust Bean Gum - Natural from carob seeds. Safe thickener.
+E412 Guar Gum - From guar beans. Safe. High doses may cause GI upset.
+E415 Xanthan Gum - Fermentation product. Safe. Used in gluten-free baking.
+E420 Sorbitol - Sugar alcohol sweetener. Can cause bloating at high doses.
+E421 Mannitol - Sugar alcohol. Laxative effect at doses >20g.
+E422 Glycerol (Glycerine) - Safe humectant and solvent.
+E440 Pectin - Natural from fruit peels. Safe. Also a fiber source.
+E450 Diphosphates - Emulsifiers in processed cheese, bakery. High intake raises phosphate concerns.
+E451 Triphosphates - Same concerns as E450.
+E471 Mono and Diglycerides of Fatty Acids - Emulsifiers in bread, margarine. Safe; can contain trans fats.
+E472e DATEM - Diacetyl tartaric acid ester of mono/diglycerides. Emulsifier in bread. Safe.
+E481 Sodium Stearoyl Lactylate - Emulsifier in baked goods. Safe.
+E491 Sorbitan Monostearate - Emulsifier. Safe.
+
+---
+FLAVOR ENHANCERS (E600–E699)
+---
+
+E620 Glutamic Acid - Naturally found in tomatoes, parmesan, mushrooms. Safe.
+E621 Monosodium Glutamate (MSG) - Umami flavor enhancer. FDA considers GRAS. "MSG symptom complex" not confirmed in double-blind studies. High sodium content is a concern.
+E627 Disodium Guanylate - Synergistic with MSG. Avoid if gout-prone (purines). Contains no MSG itself.
+E631 Disodium Inosinate - Synergistic with MSG. Same purine concerns.
+E635 Disodium 5'-ribonucleotides - Combination of E627+E631. Purine concern.
+
+---
+SWEETENERS (E950–E969)
+---
+
+E950 Acesulfame Potassium (Ace-K) - 200x sweeter than sugar. FDA-approved. Stable at high temps.
+E951 Aspartame - 200x sweeter. Breaks down to phenylalanine, aspartic acid, methanol. Dangerous for PKU patients. FDA-approved. 40mg/kg ADI.
+E952 Cyclamate - 30-50x sweeter. Banned in USA since 1969 (cancer concerns). Allowed in EU.
+E954 Saccharin - 300x sweeter. Once suspected carcinogen (removed from US list in 2000). FDA-approved.
+E955 Sucralose (Splenda) - 600x sweeter. Chlorinated sugar derivative. FDA-approved. Heat stable.
+E960 Steviol Glycosides (Stevia) - Plant-derived. Generally recognized as safe (GRAS). 250-300x sweeter.
+E961 Neotame - 7000-13000x sweeter. FDA-approved. Like aspartame but safe for PKU.
+E965 Maltitol - Sugar alcohol. 75-90% sweetness of sugar. Significant GI effects at high doses.
+E967 Xylitol - Sugar alcohol. 100% sweetness of sugar. Safe for humans; TOXIC TO DOGS. Dental health benefits.
+E968 Erythritol - Sugar alcohol. 70% sweetness. Best tolerated; minimal GI effects. Nearly zero calories.
+
+---
+COMMON FOOD ADDITIVE CONCERNS BY HEALTH CONDITION
+---
+
+ASTHMA / SULFITE SENSITIVITY:
+- Avoid: E220 (Sulfur Dioxide), E221-E228 (Sulfites), E102 (Tartrazine)
+- Found in: wine, dried fruits, processed meats, some medications
+
+ATTENTION DEFICIT / HYPERACTIVITY (Children):
+- Avoid: E102 (Tartrazine), E104, E110, E122, E124, E129 (Red 40), E211 (Sodium Benzoate)
+- "Southampton Six" colors require EU warning: "may have an adverse effect on activity and attention in children"
+
+CARDIOVASCULAR DISEASE:
+- Avoid: E250/E251 (nitrites), high-sodium preservatives, BHA/BHT, phosphates
+- Limit: E320/E321, carrageenan
+
+DIABETES / BLOOD SUGAR:
+- Sugar alcohols (E420, E421, E965-E968) are safer than sugar
+- Artificial sweeteners generally don't raise blood sugar
+- Watch for hidden sugars in "sugar-free" products
+
+KIDNEY DISEASE:
+- Avoid: high phosphate additives (E450, E451, E452, E338, E339)
+- Avoid: high potassium additives
+- Limit sodium from all sources
+
+PHENYLKETONURIA (PKU):
+- MUST AVOID: E951 (Aspartame) — produces phenylalanine
+- Products with aspartame must carry "Contains phenylalanine" warning
+
+VEGAN / VEGETARIAN:
+- Animal-derived additives: E120 (Carmine — from insects), E441 (Gelatin), E542 (bone phosphate), E631 (from meat/fish), E901 (beeswax), E904 (shellac from insects)
+
+HALAL CONCERNS:
+- E120 Carmine (from insects), E441 Gelatin (pork/non-halal slaughter), E470-E478 (fatty acid origin), E542 (bone phosphate)
+
+---
+HIDDEN NAMES FOR COMMON ADDITIVES
+---
+
+MSG appears as: Autolyzed yeast, hydrolyzed protein, yeast extract, soy protein extract, natural flavor (sometimes)
+Trans fat appears as: Partially hydrogenated oils, hydrogenated vegetable shortening
+Added sugar appears as: Sucrose, glucose, fructose, dextrose, maltose, lactose, corn syrup, high-fructose corn syrup, agave, honey, molasses, cane juice, fruit juice concentrate
+Sodium appears as: Salt, sodium chloride, sodium bicarbonate, monosodium glutamate, sodium nitrate, disodium phosphate, brine
+Sulfites appear as: Sulfur dioxide, sodium sulfite, sodium bisulfite, sodium metabisulfite, potassium bisulfite, potassium metabisulfite

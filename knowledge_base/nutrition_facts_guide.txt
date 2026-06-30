@@ -1,0 +1,163 @@
+NUTRITION FACTS LABEL GUIDE - REFERENCE DOCUMENT
+==================================================
+
+SERVING SIZE AND SERVINGS PER CONTAINER
+- Serving size is the amount of food customarily eaten at one time.
+- All nutrient amounts on the label are based on one serving.
+- If you eat more than one serving, multiply all values accordingly.
+- "Servings per container" tells you how many servings are in the whole package.
+
+CALORIES
+- Calories measure how much energy you get from a serving of food.
+- General daily calorie intake guidance: ~2000 calories/day for adults.
+- 40 calories per serving = Low
+- 100 calories per serving = Moderate
+- 400+ calories per serving = High
+- Calories from fat are no longer required on modern labels but saturated/trans fat still must be listed.
+
+MACRONUTRIENTS
+
+Total Fat:
+- Includes saturated fat, trans fat, polyunsaturated fat, and monounsaturated fat.
+- Fat is essential for energy and absorbing vitamins A, D, E, K.
+- %DV: 5% or less is low; 20% or more is high.
+- Recommended daily intake: less than 65g based on 2000 calorie diet.
+
+Saturated Fat:
+- Found in animal products: butter, cheese, meat, full-fat dairy.
+- Excess saturated fat raises LDL (bad) cholesterol, increasing cardiovascular risk.
+- Daily limit: less than 20g (less than 10% of calories).
+- %DV: 5% or less is low; 20% or more is high.
+- American Heart Association recommends <7% of total calories from saturated fat.
+
+Trans Fat:
+- Created by partial hydrogenation of vegetable oils (partially hydrogenated oils).
+- Raises LDL cholesterol AND lowers HDL (good) cholesterol — worse than saturated fat.
+- FDA banned partially hydrogenated oils (PHOs) in 2018.
+- Even "0g trans fat" can contain up to 0.5g per serving by law.
+- Avoid any product listing "partially hydrogenated" in ingredients.
+
+Cholesterol:
+- Daily limit: less than 300mg.
+- For those with cardiovascular disease: less than 200mg/day.
+- Found in animal products: eggs, meat, shellfish, dairy.
+- Plant foods contain zero cholesterol.
+
+Sodium:
+- Daily limit: less than 2300mg (about 1 teaspoon of salt).
+- For hypertensive individuals: less than 1500mg.
+- Low sodium: 140mg or less per serving.
+- Very low sodium: 35mg or less per serving.
+- Sodium-free: less than 5mg per serving.
+- Hidden sodium sources: bread, canned soups, processed meats, condiments, cheese.
+
+Total Carbohydrates:
+- Includes dietary fiber, total sugars, and added sugars.
+- Recommended: 225–325g/day based on 2000 calorie diet.
+- Carbs provide 4 calories per gram.
+
+Dietary Fiber:
+- Daily recommended intake: 25g (women), 38g (men).
+- Soluble fiber (oats, beans, apples): lowers LDL cholesterol, slows glucose absorption.
+- Insoluble fiber (whole wheat, vegetables): improves gut motility, prevents constipation.
+- Good source of fiber: 2.5g or more per serving.
+- Excellent source of fiber: 5g or more per serving.
+
+Total Sugars:
+- Includes naturally occurring sugars (from fruit, dairy) and added sugars.
+- Does not distinguish between natural and added on its own — check "Added Sugars" line.
+
+Added Sugars:
+- Sugars and syrups added during processing.
+- Daily limit: less than 50g (10% of total calories).
+- American Heart Association: women <25g/day, men <36g/day.
+- Common names for added sugars: sucrose, high-fructose corn syrup, dextrose, maltose, corn syrup, honey, agave nectar, maple syrup, molasses, fruit juice concentrate, cane sugar, evaporated cane juice.
+
+Protein:
+- Essential for building and repairing tissues, enzymes, hormones, immune function.
+- Provides 4 calories per gram.
+- Recommended intake: 0.8g per kg of body weight for sedentary adults; 1.2–2.0g/kg for athletes.
+- Complete proteins (all essential amino acids): meat, fish, eggs, dairy, soy, quinoa.
+- Incomplete proteins: most plant proteins — combine them (rice + beans) for complete profile.
+
+VITAMINS AND MINERALS
+
+Vitamin D:
+- Required for calcium absorption and bone health; immune function.
+- Daily Value: 20 mcg (800 IU).
+- Deficiency linked to osteoporosis, depression, weakened immunity.
+- Food sources: fatty fish, fortified milk, egg yolks, sunlight exposure.
+
+Calcium:
+- Essential for bone and teeth strength, nerve function, muscle contraction.
+- Daily Value: 1300mg.
+- Good sources: dairy, fortified plant milks, leafy greens (kale, bok choy), tofu, sardines.
+- Calcium absorption requires Vitamin D.
+
+Iron:
+- Essential for hemoglobin production, oxygen transport.
+- Daily Value: 18mg.
+- Heme iron (animal sources) absorbed 2–3x better than non-heme iron (plant sources).
+- Good sources: red meat, poultry, shellfish, beans, lentils, tofu, fortified cereals.
+- Vitamin C enhances non-heme iron absorption.
+- Deficiency leads to anemia: fatigue, weakness, pale skin.
+
+Potassium:
+- Regulates fluid balance, nerve signals, blood pressure.
+- Daily Value: 4700mg.
+- Low potassium diet associated with higher blood pressure.
+- Good sources: bananas, potatoes, avocados, spinach, beans, dairy.
+
+PERCENT DAILY VALUE (%DV)
+- %DV tells you how much a nutrient in a serving contributes to a daily diet.
+- Based on 2,000 calorie daily diet.
+- 5% DV or less = Low (for nutrients you want less of: saturated fat, sodium, added sugars)
+- 20% DV or more = High (good for nutrients you want more of: fiber, vitamins, minerals)
+- Use %DV to compare foods and make healthier choices.
+
+HEALTH CLAIMS AND LABEL TERMS
+- "Low fat": 3g or less of fat per serving.
+- "Fat free": less than 0.5g fat per serving.
+- "Low calorie": 40 calories or less per serving.
+- "Calorie free": less than 5 calories per serving.
+- "Low sodium": 140mg or less per serving.
+- "Reduced": at least 25% less of a nutrient compared to regular version.
+- "Light" or "Lite": 1/3 fewer calories or 50% less fat than reference food.
+- "High", "Rich in", "Excellent source of": 20% DV or more.
+- "Good source of": 10–19% DV.
+- "Fortified", "Enriched", "Added": 10% more of a nutrient than reference food.
+- "Natural": no added colors, artificial flavors, or synthetic substances — not the same as "organic".
+- "Organic": certified by USDA, grown without synthetic pesticides or fertilizers.
+
+GLYCEMIC INDEX AND GLYCEMIC LOAD
+- Glycemic Index (GI): ranks carbohydrate foods by how quickly they raise blood glucose.
+  - Low GI: ≤55 (lentils, oats, most fruits and vegetables)
+  - Medium GI: 56–69 (whole wheat bread, brown rice, sweet corn)
+  - High GI: ≥70 (white bread, white rice, most cereals, potatoes)
+- Glycemic Load (GL) = GI x carb content / 100 — accounts for portion size.
+- High GI foods cause rapid blood sugar spikes and crashes; linked to diabetes risk.
+
+OMEGA FATTY ACIDS
+- Omega-3 (ALA, EPA, DHA): anti-inflammatory, cardioprotective, brain health.
+  - Sources: fatty fish (salmon, mackerel, sardines), flaxseed, chia, walnuts.
+  - Recommended: 1.1–1.6g/day ALA; EPA/DHA from fatty fish 2x/week.
+- Omega-6 (linoleic acid): necessary but excessive intake (Western diet) promotes inflammation.
+  - Sources: vegetable oils (sunflower, corn, soybean), nuts.
+- Omega-9 (oleic acid): monounsaturated fat, heart-healthy.
+  - Sources: olive oil, avocado, almonds.
+- Optimal omega-6 to omega-3 ratio: 4:1 or less (Western diet often 15:1 to 20:1).
+
+SUGAR ALCOHOLS (POLYOLS)
+- Erythritol, xylitol, sorbitol, mannitol, maltitol, lactitol, isomalt.
+- Provide fewer calories than regular sugar (0.2–3 cal/g vs 4 cal/g).
+- Don't raise blood sugar significantly (low GI).
+- Excessive intake (>20g sorbitol, >50g mannitol) can cause bloating, gas, diarrhea.
+- Erythritol has least GI impact and best tolerance.
+
+ARTIFICIAL SWEETENERS
+- Aspartame: 200x sweeter than sugar; controversial but FDA-approved; avoid in PKU (phenylketonuria).
+- Sucralose (Splenda): 600x sweeter; stable at high temperatures; FDA-approved.
+- Saccharin: 300x sweeter; oldest artificial sweetener; FDA-approved.
+- Stevia (Rebaudioside A): plant-derived; FDA "generally recognized as safe" (GRAS).
+- Acesulfame-K: 200x sweeter; often combined with aspartame; FDA-approved.
+- None have proven long-term harm at recommended levels but some studies suggest microbiome effects.

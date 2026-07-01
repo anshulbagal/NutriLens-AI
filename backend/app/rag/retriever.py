@@ -1,6 +1,6 @@
 """
-RAG pipeline - chunking, embedding, and retrieval via ChromaDB + LangChain.
-Supports both PDF and TXT files in knowledge_base/.
+RAG pipeline - ChromaDB 0.4.24 compatible.
+Supports both TXT and PDF files in knowledge_base/.
 """
 
 import os
@@ -27,12 +27,14 @@ _vectorstore = None
 def get_embeddings():
     global _embeddings
     if _embeddings is None:
-        _embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
+        _embeddings = HuggingFaceEmbeddings(
+            model_name=EMBEDDING_MODEL_NAME
+        )
     return _embeddings
 
 
 def load_documents() -> list:
-    """Load all PDF and TXT files from knowledge_base/."""
+    """Load all TXT and PDF files from knowledge_base/."""
     all_docs = []
 
     # Load TXT files
@@ -58,9 +60,8 @@ def load_documents() -> list:
 
 def build_knowledge_base():
     """
-    Load every TXT/PDF in knowledge_base/, chunk it, embed it, and persist
-    the embeddings to vector_db/. Run this once after adding new reference
-    documents or on startup if vector_db is empty.
+    Load every TXT/PDF in knowledge_base/, chunk it, embed it,
+    and persist to vector_db/.
     """
     all_docs = load_documents()
 
@@ -70,7 +71,10 @@ def build_knowledge_base():
             "Add .txt or .pdf reference documents first."
         )
 
-    splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100)
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=800,
+        chunk_overlap=100
+    )
     chunks = splitter.split_documents(all_docs)
 
     vectorstore = Chroma.from_documents(
@@ -97,20 +101,17 @@ def get_vectorstore():
 
 
 def retrieve_context(ingredient_query: str, k: int = 3) -> list:
-    """
-    Semantic search against the persisted ChromaDB store.
-    Returns a list of plain-text chunk strings.
-    """
+    """Semantic search — returns list of relevant text chunks."""
     vectorstore = get_vectorstore()
     results = vectorstore.similarity_search(ingredient_query, k=k)
     return [doc.page_content for doc in results]
 
 
-def retrieve_context_for_ingredients(ingredients: list, k_per_ingredient: int = 2) -> list:
-    """
-    Retrieve context for a whole ingredient list at once,
-    deduplicating repeated chunks across ingredients.
-    """
+def retrieve_context_for_ingredients(
+    ingredients: list,
+    k_per_ingredient: int = 2
+) -> list:
+    """Retrieve context for a whole ingredient list, deduplicated."""
     seen = set()
     context_chunks = []
     for ingredient in ingredients:

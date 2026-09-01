@@ -72,3 +72,7 @@ frontend/out/
 backend/venv/
 backend/.pytest_cache/
 backend/htmlcov/
+
+# Documentation (generated)
+NutriLens_Architecture_Updated.html
+

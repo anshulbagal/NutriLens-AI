@@ -30,7 +30,7 @@ async def compare(
     path_a = await save_upload(file_a)
     path_b = await save_upload(file_b)
 
-    loop = asyncio.get_event_loop()
+    loop = asyncio.get_running_loop()
     try:
         # Run blocking OCR + LLM comparison in a thread pool
         result = await loop.run_in_executor(None, compare_products, path_a, path_b)

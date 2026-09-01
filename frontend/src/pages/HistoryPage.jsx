@@ -23,7 +23,7 @@ function HistoryPage() {
     try {
       await deleteHistoryEntry(id)
       setEntries((prev) => prev.filter((e) => e.id !== id))
-    } catch {
+    } catch (_e) {
       setError('Could not delete that entry.')
     }
   }
@@ -35,7 +35,7 @@ function HistoryPage() {
         month: 'short', day: 'numeric', year: 'numeric',
         hour: '2-digit', minute: '2-digit'
       })
-    } catch {
+    } catch (_e) {
       return ''
     }
   }

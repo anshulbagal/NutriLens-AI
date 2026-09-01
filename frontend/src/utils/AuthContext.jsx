@@ -15,7 +15,7 @@ export function AuthProvider({ children }) {
         const parsed = JSON.parse(storedUser)
         setToken(storedToken)
         setUser(parsed)
-      } catch {
+      } catch (_e) {
         localStorage.removeItem('nutrilens_token')
         localStorage.removeItem('nutrilens_user')
       }

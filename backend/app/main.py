@@ -16,45 +16,40 @@ load_dotenv()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """
-    On startup: automatically build the ChromaDB knowledge base from
-    knowledge_base/ text files if the vector_db directory is empty or missing.
-    This ensures RAG works on Render's free tier without needing a persistent disk.
-    """
-    try:
-        vector_db_dir = os.getenv("CHROMA_PERSIST_DIR", "../vector_db")
-        knowledge_base_dir = os.path.join(
-            os.path.dirname(__file__), "..", "..", "knowledge_base"
-        )
-
-        # Check if knowledge base has any content files
-        kb_files = [
-            f for f in os.listdir(knowledge_base_dir)
-            if not f.startswith(".") and f != "README.md"
-        ] if os.path.exists(knowledge_base_dir) else []
-
-        # Check if vector_db already has data
-        db_has_data = (
-            os.path.exists(vector_db_dir)
-            and any(
-                f for f in os.listdir(vector_db_dir)
-                if not f.startswith(".")
+    import threading
+    def build_in_background():
+        try:
+            vector_db_dir = os.getenv("CHROMA_PERSIST_DIR", "../vector_db")
+            knowledge_base_dir = os.path.join(
+                os.path.dirname(__file__), "..", "..", "knowledge_base"
             )
-        )
+            kb_files = [
+                f for f in os.listdir(knowledge_base_dir)
+                if not f.startswith(".") and f != "README.md"
+            ] if os.path.exists(knowledge_base_dir) else []
 
-        if kb_files and not db_has_data:
-            print(f"Building knowledge base from {len(kb_files)} files...")
-            from app.rag.retriever import build_knowledge_base
-            build_knowledge_base()
-            print("Knowledge base built successfully.")
-        elif db_has_data:
-            print("Knowledge base already exists, skipping build.")
-        else:
-            print("No knowledge base files found, skipping RAG build.")
+            db_has_data = (
+                os.path.exists(vector_db_dir)
+                and any(
+                    f for f in os.listdir(vector_db_dir)
+                    if not f.startswith(".")
+                )
+            )
 
-    except Exception as e:
-        print(f"Knowledge base build skipped: {e}")
+            if kb_files and not db_has_data:
+                print(f"Building knowledge base in background...")
+                from app.rag.retriever import build_knowledge_base
+                build_knowledge_base()
+                print("Knowledge base built successfully.")
+            elif db_has_data:
+                print("Knowledge base already exists, skipping build.")
+            else:
+                print("No knowledge base files found, skipping RAG build.")
+        except Exception as e:
+            print(f"Knowledge base build error: {e}")
 
+    thread = threading.Thread(target=build_in_background, daemon=True)
+    thread.start()
     yield
 
 

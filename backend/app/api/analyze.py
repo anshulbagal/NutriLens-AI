@@ -3,7 +3,6 @@ Routes for: analyze
 """
 
 import asyncio
-from functools import partial
 
 from fastapi import APIRouter, UploadFile, File, HTTPException, Depends
 
@@ -34,7 +33,7 @@ async def analyze_product(
     """
     filepath = await save_upload(file)
 
-    loop = asyncio.get_event_loop()
+    loop = asyncio.get_running_loop()
 
     try:
         # Run blocking OCR + parsing in a thread pool

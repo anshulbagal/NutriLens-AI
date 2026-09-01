@@ -35,10 +35,10 @@ async def chat(request: ChatRequest):
     NOTE: LLM call is blocking and runs in a thread pool executor so it
     doesn't freeze the async event loop.
     """
-    loop = asyncio.get_event_loop()
+    loop = asyncio.get_running_loop()
     fn = partial(
         chat_response,
-        history=[turn.dict() for turn in request.history],
+        history=[turn.model_dump() for turn in request.history],
         user_message=request.message,
         product_context=request.product_context,
     )
